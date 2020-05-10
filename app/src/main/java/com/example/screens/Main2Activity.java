@@ -7,19 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
+        Button goback = findViewById(R.id.goback);
 
-        Button knapp = findViewById(R.id.knapp);
-
-        knapp.setOnClickListener(new View.OnClickListener() {
+        goback.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            //ta bort    System.out.println("button pressed");
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+
+                Intent intent = new Intent(Main2Activity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
