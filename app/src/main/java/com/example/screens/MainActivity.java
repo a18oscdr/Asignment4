@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         knapp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            //ta bort    System.out.println("button pressed");
+
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(intent);
             }
